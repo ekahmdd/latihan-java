@@ -3,17 +3,21 @@ import java.util.Scanner;
 
 public class PersegiPanjang {
     public static void main(String[] args) {
-        Scanner nilai = new Scanner (System.in);
+        double panjang;
+        double lebar;
+        double luas;
         
-        System.out.println("Masukkan Panjang");
-        int panjang = nilai.nextInt();
         
-        System.out.println("Masukkan Lebar");
-        int lebar = nilai.nextInt();
-        
-        int Luas = panjang * lebar;
-        
-        System.out.println("Luas persegi panjang adalah: " + Luas);
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan Panjang: ");
+          panjang = input.nextDouble();
+          System.out.print("Masukkan Lebar: ");
+          lebar = input.nextDouble();
+          
+          luas = panjang*lebar;
+          
+          System.out.println("Luas Persegi Panjang adalah: " + luas);
+          
+          
     }
 }
